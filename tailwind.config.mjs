@@ -21,14 +21,26 @@ export default {
 		primary: "var(--font-jetbrainsMono)",
 	},
   	extend: {
-  		colors: {
-  			background: 'white',
+		  colors: {
+			border: "hsl(var(--border))",
+			input: "hsl(var(--input))",
+			ring: "hsl(var(--ring))",
+			background: 'white',
   			foreground: 'var(--foreground)',
 			accent:{
 				DEFAULT:"#00688B",
 				hover:"#00688B"
+			},
+			primary: {
+			  DEFAULT: "#151C35",
+			  hover: "#1a2240",
+			  light: "#232d4d",
+			},
+			secondary: {
+			  DEFAULT: "#ffffff",
+			  hover: "#f5f5f5",
 			}
-  		},
+		  },
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

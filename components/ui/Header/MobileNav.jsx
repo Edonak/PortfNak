@@ -30,7 +30,7 @@ export default function MobileNav() {
   return (
     <Sheet>
       <SheetTrigger className="flex justify-center items-center">
-        <CiMenuFries className="text-[2rem] text-accent" />
+        <CiMenuFries className="text-[2rem] text-secondary" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         <div className=" text-center text-2xl">
@@ -44,7 +44,7 @@ export default function MobileNav() {
           />
         </Link>
         </div>
-        <nav  className="text-black flex flex-col justify-center items-center gap-8">
+        <nav  className="text-secondary flex flex-col justify-center items-center gap-8">
             {links.map((link, index)=> {
                 return(
                     <Link href={link.path} key={index} className={`${link.path === pathname && "text-accent border-b-2 border-accent"}text-xl capitalize hover:text-accent transition-all`}>

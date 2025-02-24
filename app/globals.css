@@ -4,12 +4,19 @@
 
 body {
   font-family:  sans-serif;
-  @apply bg-background text-black leading-loose;
-}
+  @apply bg-primary text-secondary leading-loose;
+
+} 
 
 @layer base {
-  :root {
-    --radius: 0.5rem;
+  .h1 {
+    @apply text-[24px] xl:text-[40px] leading-[1.1] font-semibold    
+  }
+  .h2 {
+    @apply text-[24px] xl:text-[36px] leading-[1.1] font-semibold    
+  }
+  .h3 {
+    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold    
   }
 }
 
@@ -26,3 +33,4 @@ body {
 .animate-spin-slow {
   animation: spin-slow 3s linear infinite;
 }
+
