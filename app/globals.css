@@ -2,13 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family:  sans-serif;
-  @apply bg-primary text-secondary leading-loose;
-
-} 
-
 @layer base {
+  body {
+    font-family:  sans-serif;
+    @apply bg-primary text-secondary leading-loose;
+  
+  } 
   .h1 {
     @apply text-[24px] xl:text-[40px] leading-[1.1] font-semibold    
   }
